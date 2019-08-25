@@ -264,15 +264,15 @@
                     <form action="" class="col">
                         <div class="helvetica row justify-content-center fs-4 f-bold p-2 mb-3">CONTACT ME</div>
                         <div class="row mb-2">
-                            <input type="text" name="contact-name" id="contact-name" placeholder="Your Name">
+                            <input type="text" name="contact-name" id="contact-name" class="contact-input" placeholder="Your Name">
                             <label for="contact-name"></label>
                         </div>
                         <div class="row mb-2">
-                            <input type="email" name="contact-email" id="contact-email" placeholder="Your Email">
+                            <input type="email" name="contact-email" id="contact-email" class="contact-input" placeholder="Your Email">
                             <label for="contact-email"></label>
                         </div>
                         <div class="row">
-                            <input type="text" name="contact-message" id="contact-message" placeholder="Your Message">
+                            <textarea name="contact-message" id="contact-message" class="contact-input" cols="30" rows="10" placeholder="Your Message"></textarea>
                             <label for="contact-message"></label>
                         </div>
                         <div class="yellow-button helvetica row justify-content-center ml-auto mr-auto mt-3">Send</div>
@@ -281,7 +281,7 @@
             </div>
 
             <div class="main-part col-9">
-                <article id="night-life container">
+                <article id="night-life" class="main-shadow container-fluid">
                     <div class="col-6">
                         <div class="yellow-font">NIGHT LIFE</div>
                         <div>Written in the stars, Million miles away!</div>
@@ -306,7 +306,7 @@
                     </div>
                 </article>
 
-                <article id="trekking container">
+                <article id="trekking" class="main-shadow container-fluid">
                     <div class="col-6">
                         <img src="images/twoside1.png" alt="Awesome lake" width="100%">
                     </div>
@@ -331,7 +331,7 @@
                     </div>
                 </article>
 
-                <article id="life-style container">
+                <article id="life-style" class="main-shadow container-fluid">
                     <div class="row no-gutter">
                         <img src="images/mika-matin-139247.png" alt="Railroad" width="100%">
                     </div>
@@ -354,7 +354,7 @@
                     </div>
                 </article>
 
-                <article id="food container">
+                <article id="food" class="main-shadow container-fluid">
                     <div class="col-6">
                         <img src="images/ydmnwsnswo0-adrian-sava.png" alt="Leading girl" width="100%">
                         <div class="row justify-content-center yellow-font">FOOD AND TRAVEL</div>
@@ -395,7 +395,7 @@
                     </div>
                 </article>
 
-                <article id="life-style-2 container">
+                <article id="life-style-2" class="main-shadow container-fluid">
                     <div class="row no-gutter">
                         <img src="images/y_jyoii-nk4-matic-kozinc.png" alt="Meadows" width="100%">
                     </div>
@@ -423,9 +423,9 @@
                         <i class="fas fa-long-arrow-alt-left"></i> Previous
                     </div>
                     <div class="col-3">
-                        <span>1</span>
-                        <span>2</span>
-                        <span>3</span>
+                        <div class="pagination-page">1</div>
+                        <div class="pagination-page">2</div>
+                        <div class="pagination-page">3</div>
                     </div>
                     <div class="col-3">
                         Next <i class="fas fa-long-arrow-alt-right"></i>
@@ -434,30 +434,32 @@
             </div>
         </div>
 
-        <section id="gallery" class="row no-gutter">
-            <div class="col-3 no-gutter"><img src="images/gallery/1.png" alt="Sleeping girl" width="100%">
+        <section id="gallery" class="row no-gutters">
+            <div class="col">
+                <img src="images/gallery/1.png" alt="Sleeping girl" width="100%">
             </div>
-            <div class="col-3 no-gutter">
+            <div class="col">
                 <img src="images/gallery/2.png" alt="Railroad" width="100%">
             </div>
-            <div class="col-3 no-gutter">
+            <div class="col">
                 <img src="images/gallery/6.png" alt="Planets" width="100%">
             </div>
-            <div class="col-3 no-gutter">
+            <div class="col">
                 <img src="images/gallery/33.png" alt="Girl and moon" width="100%">
             </div>
         </section>
 
-        <section id="gallery-2" class="row no-gutter">
-            <div class="col-3 no-gutter"><img src="images/gallery/timetravel11.png" alt="Time travel" width="100%">
+        <section id="gallery-2" class="row no-gutters">
+            <div class="col">
+                <img src="images/gallery/timetravel11.png" alt="Time travel" width="100%">
             </div>
-            <div class="col-3 no-gutter">
+            <div class="col">
                 <img src="images/gallery/bitch1.png" alt="Skyscrapers" width="100%">
             </div>
-            <div class="col-3 no-gutter">
+            <div class="col">
                 <img src="images/gallery/wood2.png" alt="Purple moon" width="100%">
             </div>
-            <div class="col-3 no-gutter">
+            <div class="col">
                 <img src="images/gallery/3.png" alt="Boy in cellphone" width="100%">
             </div>
         </section>

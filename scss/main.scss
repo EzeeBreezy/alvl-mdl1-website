@@ -10,6 +10,14 @@ $lettSpace: 3px;
     letter-spacing: $lettSpace;
 }
 
+@mixin input {
+    font-family: "Merriweather";
+    font-style: italic;
+    color: rgb(168, 174, 174); 
+    padding: 0.5rem 1.5rem;
+    width: 100%;
+}
+
 * {
     font-size: 14px;
     margin: 0;
@@ -42,58 +50,6 @@ input:active {
 input:focus {
     outline: 0;
 }
-
-// #top-search {
-//     border: 2px solid white;
-//     font-family: "Merriweather";
-//     color: rgb(168, 174, 174); 
-//     font-style: italic;
-//     border-radius: 20px;
-//     width: 100%;
-//     padding: 0.5rem 1.5rem;
-// }
-
-// #top-search:hover {
-//     border-color: black;
-//     outline: 0;
-// }
-
-// #top-search:active {
-//     outline: 0;
-// }
-
-// #top-search:focus {
-//     outline: 0;
-//     border-color: rgb(168, 174, 174); 
-// }
-
-// #subs-email {
-//     color: rgb(168, 174, 174);
-//     font-style: italic;
-//     font-family: "Merriweather";
-//     width: 100%;
-//     padding: 0.5rem 1.5rem;
-//     text-align: center;
-//     border: 2px solid white;
-//     border-bottom-color: rgb(36, 41, 41); 
-//     font-weight: 900;
-// }
-
-// #subs-email:hover {
-//     outline: 0;
-//     font-weight: 500;
-// }
-
-// #subs-email:active {
-//     outline: 0;
-//     font-weight: 500;
-// }
-
-// #subs-email:focus {
-//     outline: 0;
-//     border: 2px solid rgb(169, 179, 227); 
-//     font-weight: 500;
-// }
 
 a:visited {
     text-decoration: none;
@@ -284,6 +240,10 @@ color: rgb(155, 160, 160)
     box-shadow: 0px 0.9rem 1rem 0.12rem rgba(0, 0, 0, 0.33);
 }
 
+.main-shadow {
+    box-shadow: 0px 1.8rem 2rem 0.12rem rgba(0, 0, 0, 0.24);
+}
+
 .edging {
     position: absolute;
     border: 2px solid lightblue; 
@@ -310,26 +270,17 @@ color: rgb(155, 160, 160)
 }
 
 #top-search {
+    @include input;
     border: 2px solid white;
-    font-family: "Merriweather";
-    color: rgb(168, 174, 174); 
-    font-style: italic;
     border-radius: 20px;
-    width: 100%;
-    padding: 0.5rem 1.5rem;
 }
 
 #top-search:hover {
     border-color: black;
-    outline: 0;
 }
 
-#top-search:active {
-    outline: 0;
-}
 
 #top-search:focus {
-    outline: 0;
     border-color: rgb(168, 174, 174); 
 }
 
@@ -457,12 +408,9 @@ color: rgb(155, 160, 160)
     text-align: center;
 }
 
+
 #subs-email {
-    color: rgb(168, 174, 174);
-    font-style: italic;
-    font-family: "Merriweather";
-    width: 100%;
-    padding: 0.5rem 1.5rem;
+    @include input;
     text-align: center;
     border: 2px solid white;
     border-bottom-color: rgb(36, 41, 41); 
@@ -470,17 +418,14 @@ color: rgb(155, 160, 160)
 }
 
 #subs-email:hover {
-    outline: 0;
     font-weight: 500;
 }
 
 #subs-email:active {
-    outline: 0;
     font-weight: 500;
 }
 
 #subs-email:focus {
-    outline: 0;
     border: 2px solid rgb(169, 179, 227); 
     font-weight: 500;
 }
@@ -510,6 +455,50 @@ color: rgb(155, 160, 160)
 .yellow-border {
     border: 3px solid rgb(255, 201, 8);
 }
+
+#contact-message {
+    height: 10rem;
+}
+.contact-input {
+    @include input; 
+    background-color: rgba(246, 248, 249, 0.502);
+    border: 1px solid rgb(238, 242, 246);
+}
+
+.contact-input:hover {
+    outline: 0;
+    border-color: rgba(0, 204, 255, 0.502);
+}
+
+.contact-input:active {
+    outline: 0;
+    border-color: rgba(0, 204, 255, 0.502); 
+}
+
+.contact-input:focus {
+    border-color: rgb(255, 201, 8)
+}
+
+// MAIN-PART
+
+.pagination-page {
+    display: inline-block;
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    text-align:center;
+    border-radius: 50%;
+}
+
+.pagination-page:hover {
+    background-color: rgb(255, 201, 8);
+}
+
+.pagination-page:active {
+    background-color: rgb(255, 140, 8);
+}
+
+
 
 // FOOTER
 .grey-back {
