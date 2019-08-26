@@ -3092,7 +3092,14 @@ body {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none; }
+  -ms-user-select: none;
+  background: -webkit-gradient(linear, left top, left bottom, from(#4d143f), to(#fadc33));
+  background: -webkit-linear-gradient(top, #4d143f, #fadc33);
+  background: -o-linear-gradient(top, #4d143f, #fadc33);
+  background: linear-gradient(to bottom, #4d143f, #fadc33); }
+
+.container, .container-fluid {
+  background: white; }
 
 input {
   user-select: all;
@@ -3199,8 +3206,17 @@ label {
 .light-grey-font {
   color: #9ba0a0; }
 
+.light-blue-font {
+  color: lightblue; }
+
 .text-justify {
   text-align: justify; }
+
+.text-center {
+  text-align: center; }
+
+.text-end {
+  text-align: end; }
 
 .helvetica {
   font-family: 'Open Sans'; }
@@ -3372,7 +3388,7 @@ label {
   background-size: cover;
   background-position: center;
   background-position-y: -4rem;
-  min-height: 60rem;
+  min-height: 50rem;
   -webkit-box-shadow: 0px 0.8rem 1.5rem 0.15rem rgba(0, 0, 0, 0.19);
   box-shadow: 0px 0.8rem 1.5rem 0.15rem rgba(0, 0, 0, 0.19); }
 
@@ -3520,6 +3536,14 @@ label {
   height: 4rem;
   border: 1px solid white; }
 
+.likes-comments {
+  position: absolute;
+  bottom: 1.5rem;
+  right: 0; }
+
+.likes-comments i {
+  color: lightblue; }
+
 .pagination-page {
   display: inline-block;
   width: 2rem;
@@ -3533,6 +3557,12 @@ label {
 
 .pagination-page:active {
   background-color: #ff8c08; }
+
+.pagination-switch:hover {
+  color: #ffc908; }
+
+.pagination-switch:active {
+  color: #ff8c08; }
 
 .grey-back {
   background-color: #737373; }

@@ -24,13 +24,17 @@ $lettSpace: 3px;
     margin: 0;
     padding: 0;
     text-decoration: none;
-    // transition: 0.3s all;
 }
 body {
     user-select: none; 
     -webkit-user-select: none; 
     -moz-user-select: none; 
     -ms-user-select: none; 
+    background: linear-gradient(to bottom, rgb(77, 20, 63), rgb(250, 220, 51))
+}
+
+.container, .container-fluid {
+    background: white;
 }
 
 input {
@@ -153,8 +157,20 @@ label {
 color: rgb(155, 160, 160)
 }
 
+.light-blue-font {
+    color: lightblue
+}
+
 .text-justify {
-    text-align: justify;
+    text-align: justify
+}
+
+.text-center {
+    text-align: center
+}
+
+.text-end {
+    text-align: end
 }
 
 .helvetica {
@@ -329,7 +345,7 @@ color: rgb(155, 160, 160)
     color: rgb(255, 201, 8);
     font-weight: bolder;
 }
-// check on color and font-famoiloy
+
 .nav-link {
     font-weight: bold;
     color: black;
@@ -360,7 +376,7 @@ color: rgb(155, 160, 160)
     background-size: cover;
     background-position: center;
     background-position-y: -4rem;
-    min-height: 60rem;
+    min-height: 50rem;
     box-shadow: 0px 0.8rem 1.5rem 0.15rem rgba(0, 0, 0, 0.19);
 }
 
@@ -411,7 +427,6 @@ color: rgb(155, 160, 160)
 }
 
 // SIDEBAR
-
 #map {
     height: 45rem; 
     width: 100%;  
@@ -420,7 +435,6 @@ color: rgb(155, 160, 160)
 #about-me p {
     text-align: center;
 }
-
 
 #subs-email {
     @include input;
@@ -493,7 +507,6 @@ color: rgb(155, 160, 160)
 }
 
 // MAIN-PART
-
 .content-line {
     width: 90%;
     background-color: lightblue;
@@ -518,6 +531,16 @@ color: rgb(155, 160, 160)
     border: 1px solid white;
 }
 
+.likes-comments {
+    position: absolute;
+    bottom: 1.5rem;
+    right: 0;
+}
+
+.likes-comments i {
+    color: lightblue
+}
+
 .pagination-page {
     display: inline-block;
     width: 2rem;
@@ -528,11 +551,19 @@ color: rgb(155, 160, 160)
 }
 
 .pagination-page:hover {
-    background-color: rgb(255, 201, 8);
+    background-color: rgb(255, 201, 8)
 }
 
 .pagination-page:active {
-    background-color: rgb(255, 140, 8);
+    background-color: rgb(255, 140, 8)
+}
+
+.pagination-switch:hover {
+    color: rgb(255, 201, 8)
+}
+
+.pagination-switch:active {
+    color: rgb(255, 140, 8)
 }
 
 // GALLERY
@@ -588,9 +619,3 @@ color: rgb(155, 160, 160)
     height: 100%;
     color: black;
 }
-// for tests
-
-
-
-// end tests
-
