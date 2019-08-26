@@ -3125,11 +3125,14 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
   letter-spacing: 0px;
-  max-height: 2.3rem;
+  height: 2.3rem;
+  text-align: center;
+  line-height: 2rem;
   max-width: 10rem;
   background-color: #ffc908;
   border: 3px solid #ffc908; }
@@ -3223,6 +3226,9 @@ label {
 .dosis {
   font-family: 'Dosis'; }
 
+.oxygen {
+  font-family: 'Oxygen'; }
+
 .fs-1 {
   font-size: 0.8rem; }
 
@@ -3240,6 +3246,9 @@ label {
 
 .fs-6 {
   font-size: 2.5rem; }
+
+.line-height-x2 {
+  line-height: 2; }
 
 .lsp-1 {
   letter-spacing: 0px; }
@@ -3316,6 +3325,7 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3437,6 +3447,7 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3483,6 +3494,32 @@ label {
 .contact-input:focus {
   border-color: #ffc908; }
 
+.content-line {
+  width: 90%;
+  background-color: lightblue;
+  height: 2px;
+  border: 0; }
+
+.oversized {
+  position: absolute;
+  top: -5rem; }
+
+.oversized-v2 {
+  padding: -5rem; }
+
+.cover-button {
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
+  transition: 0.3s all;
+  letter-spacing: 3px;
+  width: 12rem;
+  height: 4rem;
+  border: 1px solid white; }
+
 .pagination-page {
   display: inline-block;
   width: 2rem;
@@ -3522,6 +3559,7 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
+  text-align: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;

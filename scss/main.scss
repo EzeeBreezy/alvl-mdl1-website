@@ -6,6 +6,7 @@ $lettSpace: 3px;
     text-transform: uppercase;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
     transition: 0.3s all;
     letter-spacing: $lettSpace;
 }
@@ -69,7 +70,9 @@ label {
 
 .yellow-button {
     @include button (0px);
-    max-height: 2.3rem;
+    height: 2.3rem;
+    text-align: center;
+    line-height: 2rem;
     max-width: 10rem;
     background-color: rgb(255, 201, 8);
     border: 3px solid rgb(255, 201, 8);
@@ -186,6 +189,10 @@ color: rgb(155, 160, 160)
     font-family: 'Dosis'
 }
 
+.oxygen {
+    font-family: 'Oxygen';
+}
+
 .fs-1 {
     font-size: 0.8rem
 }
@@ -208,6 +215,10 @@ color: rgb(155, 160, 160)
 
 .fs-6 {
     font-size: 2.5rem
+}
+
+.line-height-x2 {
+    line-height:2; 
 }
 
 .lsp-1 {
@@ -482,6 +493,30 @@ color: rgb(155, 160, 160)
 }
 
 // MAIN-PART
+
+.content-line {
+    width: 90%;
+    background-color: lightblue;
+    height: 2px;
+    border: 0;
+}
+
+// not correct positioning
+.oversized {
+    position: absolute;
+    top: -5rem;
+}
+
+.oversized-v2 {
+    padding: -5rem
+}
+
+.cover-button {
+    @include button(3px);
+    width: 12rem;
+    height: 4rem;
+    border: 1px solid white;
+}
 
 .pagination-page {
     display: inline-block;
