@@ -30,9 +30,11 @@
         rel="stylesheet">
 </head>
 
+
 <body>
-    <header id="header">
-        <div class="row justify-content-around align-items-center mt-4 mb-4">
+
+    <header id="header" class="container-fluid">
+        <div class="row justify-content-around align-items-center mt-5 mb-5">
             <div class="col-2 row">
                 <input type="search" name="top-search" id="top-search" placeholder="Search and hit enter">
                 <label for="top-search"></label>
@@ -41,7 +43,7 @@
             <div class="col-2">
                 <img src="images/logo-top.svg" alt="Beautiful website logo" width="100%">
             </div>
-            <div class="col-2 pl-5 pr-5">
+            <div class="col-2">
                 <div class="subscribe-button row align-items-center justify-content-center pt-2 pb-2">Subscribe</div>
             </div>
         </div>
@@ -73,11 +75,11 @@
         </nav>
     </header>
 
-    <main id="main">
+    <main id="main" class="container-fluid">
 
-        <section id="eclipse" class="row no-gutters align-items-center pt-5 pl-4 mb-5">
+        <section id="eclipse" class="row align-items-center pt-5 pl-4 mb-5">
             <div class="col-12 pl-3">
-                <div class="white-font bank-gothic fs-6 lsp-5 pt-5">Travelling</div>
+                <h1 class="white-font bank-gothic fs-6 lsp-5 pt-5">Travelling</h1>
                 <div class="white-font f-bold col-7 miryad ml-4">
                     <div class="triangle-tr mt-1 "></div>&nbsp SPORTS THAT NEVER ENDS
                 </div>
@@ -115,25 +117,28 @@
             </div>
         </section>
 
-        <div class="row">
+        <section id="content-holder" class="row">
 
-            <div id="sidebar" class="col">
+            <aside id="aside" class="col-4">
 
-                <section id="where" class="container col ml-3 mb-5 p-4 shadowed">
-                    <div class="edging"></div>
-                    <div class="over-edge miryad col-4 ml-auto mr-auto row justify-content-center fs-4 f-bold p-2 mb-3">
-                        WHERE AM I </div>
-                    <div class="over-edge row no-gutters justify-content-center pt-4">
-                        <div id="map"></div>
+                <section id="where" class="row ml-1 mb-4 p-4 shadowed">
+                    <div class="col">
+                        <div class="edging"></div>
+                        <h2
+                            class="over-edge miryad col-5 ml-auto mr-auto row justify-content-center fs-4 f-bold p-2 mb-3">
+                            WHERE AM I </h2>
+                        <div class="over-edge row justify-content-center pt-4">
+                            <div id="map"></div>
+                        </div>
                     </div>
                 </section>
 
-                <section id="about-me" class="container pr-0 pl-0 ml-3 mb-5 shadowed">
-                    <div class="col pt-4">
+                <section id="about-me" class="row ml-1 mb-4 pt-4 shadowed">
+                    <div class="col">
                         <div class="edging"></div>
-                        <div
-                            class="over-edge miryad col-4 ml-auto mr-auto row justify-content-center fs-4 f-bold p-2 mb-2">
-                            ABOUT ME</div>
+                        <h2
+                            class="over-edge miryad col-5 ml-auto mr-auto row justify-content-center fs-4 f-bold p-2 mb-2">
+                            ABOUT ME</h2>
                         <p class="over-edge fs-2 miryad grey-font p-2 ml-4 mr-4">Hi! I`m a Traveller based on Assam <br>
                             I love editing photos, clicking photos, creating responsive websites alongwith high quality
                             graphics.</p>
@@ -153,135 +158,176 @@
                                     class="fab fa-youtube"></i></a>
                         </div>
                     </div>
-                    <img src="images/aboutme.png" class="over-edge row no-gutters" alt="The All-seeing Eye"
-                        width="100%">
+                    <div class="over-edge row no-gutters">
+                        <img src="images/aboutme.png" alt="The All-seeing Eye" width="100%">
+                    </div>
                 </section>
 
-                <section id="newsletter" class="container col ml-3 mb-5 pr-0 pl-0 pt-4 pb-5 shadowed">
-                    <div class="edging"></div>
-                    <div
-                        class="over-edge pompiere grey-font f-bold col-4 ml-auto mr-auto row justify-content-center fs-5 p-2 mb-3">
-                        Newsletter</div>
-                    <input type="email" name="newsletter" id="subs-email" class="over-edge mb-3"
-                        placeholder="Your email address">
-                    <div class="sign-up-button dosis white-font row no-gutters justify-content-center p-2">sign up</div>
-                </section>
-
-                <section id="categories" class="container col ml-3 mb-5 p-4 shadowed">
-                    <div class="edging"></div>
-                    <div
-                        class="over-edge pompiere grey-font col-4 ml-auto mr-auto row justify-content-center fs-5 f-bold p-2 mb-3">
-                        Categories</div>
-                    <a href="https://lmgtfy.com/?q=Nature"
-                        class="over-edge row justify-content-center grey-font f-bold pt-1 pb-1 miryad"
-                        target="_blank">Nature</a>
-                    <hr class="header-line col ml-auto mr-auto">
-                    <a href="https://lmgtfy.com/?q=Nightlife"
-                        class="over-edge row justify-content-center grey-font f-bold pt-1 pb-1 miryad"
-                        target="_blank">Nightlife</a>
-                    <hr class="header-line col ml-auto mr-auto">
-                    <a href="https://lmgtfy.com/?q=lifestyle"
-                        class="over-edge row justify-content-center grey-font f-bold pt-1 pb-1 miryad"
-                        target="_blank">Lifestyle</a>
-                    <hr class="header-line col ml-auto mr-auto">
-                    <a href="https://lmgtfy.com/?q=food"
-                        class="over-edge row justify-content-center grey-font f-bold pt-1 pb-1 miryad"
-                        target="_blank">Food</a>
-                </section>
-
-                <section id="recent" class="container col ml-3 mb-5 p-4 shadowed">
-                    <div class="edging"></div>
-                    <div
-                        class="over-edge pompiere grey-font col-4 ml-auto mr-auto row justify-content-center fs-5 f-bold p-2 mb-3">
-                        Recent post</div>
-                    <div class="row over-edge pt-3 pb-3">
-                        <div class="col-5">
-                            <img src="images/recents/mariona-campmany-6321.png" alt="Road" width="100%">
+                <section id="newsletter" class="row ml-1 mb-4 pt-4 pb-5 shadowed">
+                    <div class="col">
+                        <div class="edging"></div>
+                        <h2
+                            class="over-edge pompiere grey-font f-bold col-5 ml-auto mr-auto row justify-content-center fs-5 p-2 mb-3">
+                            Newsletter</h2>
+                        <div class="row over-edge mb-3">
+                            <input type="email" name="newsletter" id="subs-email" class=""
+                                placeholder="Your email address">
                         </div>
-                        <div class="col-7 row">
-                            <div class="col-12 helvetica fs-3 let-sp-2">Travelling with your buddies.</div>
-                            <div class="col-12 helvetica fs-3 let-sp-2 light-grey-font"> July 25, 2016</div>
-                        </div>
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col-5">
-                            <img src="images/recents/mariona-campmany-6321 copy.png" alt="Girl on the road"
-                                width="100%">
-                        </div>
-                        <div class="col-7 row">
-                            <div class="col-12 helvetica fs-3 let-sp-2">Travelling with your buddies.</div>
-                            <div class="col-12 helvetica fs-3 let-sp-2 light-grey-font"> July 25, 2016</div>
-                        </div>
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col-5">
-                            <img src="images/recents/person-1209310_1920 copy.png" alt="Skies" width="100%">
-                        </div>
-                        <div class="col-7 row">
-                            <div class="col-12 helvetica fs-3 let-sp-2">Travelling with your buddies.</div>
-                            <div class="col-12 helvetica fs-3 let-sp-2 light-grey-font"> July 25, 2016</div>
-                        </div>
-                    </div>
-                    <div class="row pb-3">
-                        <div class="col-5">
-                            <img src="images/recents/person-1209310_1920.png" alt="Man and skies" width="100%">
-                        </div>
-                        <div class="col-7 row">
-                            <div class="col-12 helvetica fs-3 let-sp-2">Travelling with your buddies.</div>
-                            <div class="col-12 helvetica fs-3 let-sp-2 light-grey-font"> July 25, 2016</div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-5">
-                            <img src="images/recents/mariona-campmany-6321.png" alt="Road" width="100%">
-                        </div>
-                        <div class="col-7 row">
-                            <div class="col-12 helvetica fs-3 let-sp-2">Travelling with your buddies.</div>
-                            <div class="col-12 helvetica fs-3 let-sp-2 light-grey-font"> July 25, 2016</div>
+                        <div class="row">
+                            <div class="sign-up-button dosis white-font row no-gutters justify-content-center p-2">sign
+                                up
+                            </div>
                         </div>
                     </div>
                 </section>
 
-                <section id="tags" class="container col ml-3 mb-5 pr-3 pl-3 pt-4 pb-5 shadowed">
-                    <div class="edging"></div>
-                    <div class="over-edge pompiere grey-font f-bold col-4 ml-auto mr-auto row justify-content-center fs-5 p-2 mb-3">
-                        Tags</div>
-                    <div class="row justify-content-around pt-3">
-                        <div class="col-4 yellow-border"><a href="" class="miryad fs-3 f-bold" target="_blank">LIFESTYLE</a></div>
-                        <div class="col-4 yellow-border"><a href="" class="miryad fs-3 f-bold" target="_blank">TRAVEL</a></div>
-                    </div>
-                    <div class="row justify-content-around pt-2">
-                        <div class="col-4 yellow-border"><a href="" class="miryad fs-3 f-bold" target="_blank">NATURE</a></div>
-                        <div class="col-4 yellow-border"><a href="" class="miryad fs-3 f-bold" target="_blank">LOST</a></div>
-                    </div>
-                    <div class="row justify-content-around pt-2">
-                        <div class="col-4 yellow-border"><a href="" class="miryad fs-3 f-bold" target="_blank">TREKKING</a></div>
-                        <div class="col-4 yellow-border"><a href="" class="miryad fs-3 f-bold" target="_blank">LIFESTYLE</a></div>
+                <section id="categories" class="row ml-1 mb-4 p-4 shadowed">
+                    <div class="col">
+                        <div class="edging"></div>
+                        <h2
+                            class="over-edge pompiere grey-font col-5 ml-auto mr-auto row justify-content-center fs-5 f-bold p-2 mb-3">
+                            Categories</h2>
+                        <div class="over-edge row justify-content-center">
+                            <a href="https://lmgtfy.com/?q=Nature" class="grey-font f-bold pt-1 pb-1 miryad"
+                                target="_blank">Nature</a>
+                        </div>
+                        <hr class="header-line row col ml-auto mr-auto">
+                        <div class="over-edge row justify-content-center">
+                            <a href="https://lmgtfy.com/?q=Nightlife" class="grey-font f-bold pt-1 pb-1 miryad"
+                                target="_blank">Nightlife</a>
+                        </div>
+                        <hr class="header-line row col ml-auto mr-auto">
+                        <div class="over-edge row justify-content-center">
+                            <a href="https://lmgtfy.com/?q=lifestyle" class="grey-font f-bold pt-1 pb-1 miryad"
+                                target="_blank">Lifestyle</a>
+                        </div>
+                        <hr class="header-line col row ml-auto mr-auto">
+                        <div class="over-edge row justify-content-center">
+                            <a href="https://lmgtfy.com/?q=food" class="grey-font f-bold pt-1 pb-1 miryad"
+                                target="_blank">Food</a>
+                        </div>
                     </div>
                 </section>
 
-                <section id="contact-me" class="container ml-3 mb-5 pr-3 pl-3 pt-4 pb-5 shadowed">
+                <section id="recent" class="row ml-1 mb-4 pt-4 pb-3 shadowed">
+                    <div class="col">
+                        <div class="edging"></div>
+                        <h2
+                            class="over-edge pompiere grey-font col-4 ml-auto mr-auto row justify-content-center fs-5 f-bold p-2 mb-3">
+                            Recent post</h2>
+                        <div class="row over-edge pt-3 pb-3">
+                            <div class="col-5">
+                                <img src="images/recents/mariona-campmany-6321.png" alt="Road" width="100%">
+                            </div>
+                            <div class="col-7 row">
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2">Travelling with your buddies.
+                                </div>
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2 light-grey-font"> July 25, 2016
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-5">
+                                <img src="images/recents/mariona-campmany-6321 copy.png" alt="Girl on the road"
+                                    width="100%">
+                            </div>
+                            <div class="col-7 row">
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2">Travelling with your buddies.
+                                </div>
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2 light-grey-font"> July 25, 2016
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-5">
+                                <img src="images/recents/person-1209310_1920 copy.png" alt="Skies" width="100%">
+                            </div>
+                            <div class="col-7 row">
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2">Travelling with your buddies.
+                                </div>
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2 light-grey-font"> July 25, 2016
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row pb-3">
+                            <div class="col-5">
+                                <img src="images/recents/person-1209310_1920.png" alt="Man and skies" width="100%">
+                            </div>
+                            <div class="col-7 row">
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2">Travelling with your buddies.
+                                </div>
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2 light-grey-font"> July 25, 2016
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <img src="images/recents/mariona-campmany-6321.png" alt="Road" width="100%">
+                            </div>
+                            <div class="col-7 row">
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2">Travelling with your buddies.
+                                </div>
+                                <div class="col-12 helvetica fs-3 text-justify lsp-2 light-grey-font"> July 25, 2016
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="tags" class="row ml-1 mb-4 pr-3 pl-3 pt-4 pb-5 shadowed">
+                    <div class="col">
+                        <div class="edging"></div>
+                        <h2
+                            class="over-edge pompiere grey-font f-bold col-4 ml-auto mr-auto row justify-content-center fs-5 p-2 mb-3">
+                            Tags</h2>
+                        <div class="row justify-content-around pt-3">
+                            <div class="col-4 yellow-border"><a href="" class="black-font miryad fs-3 f-bold"
+                                    target="_blank">LIFESTYLE</a></div>
+                            <div class="col-4 yellow-border"><a href="" class="black-font miryad fs-3 f-bold"
+                                    target="_blank">TRAVEL</a></div>
+                        </div>
+                        <div class="row justify-content-around pt-2">
+                            <div class="col-4 yellow-border"><a href="" class="black-font miryad fs-3 f-bold"
+                                    target="_blank">NATURE</a></div>
+                            <div class="col-4 yellow-border"><a href="" class="black-font miryad fs-3 f-bold"
+                                    target="_blank">LOST</a></div>
+                        </div>
+                        <div class="row justify-content-around pt-2">
+                            <div class="col-4 yellow-border"><a href="" class="black-font miryad fs-3 f-bold"
+                                    target="_blank">TREKKING</a></div>
+                            <div class="col-4 yellow-border"><a href="" class="black-font miryad fs-3 f-bold"
+                                    target="_blank">LIFESTYLE</a></div>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="contact-me" class="row ml-1 mb-5 pr-3 pl-3 pt-4 pb-5 shadowed">
                     <form action="" class="col">
-                        <div class="helvetica row justify-content-center fs-4 f-bold p-2 mb-3">CONTACT ME</div>
+                        <h2 class="helvetica row justify-content-center fs-4 f-bold p-2 mb-3">CONTACT ME</h2>
                         <div class="row mb-2">
-                            <input type="text" name="contact-name" id="contact-name" class="contact-input" placeholder="Your Name">
+                            <input type="text" name="contact-name" id="contact-name" class="contact-input"
+                                placeholder="Your Name">
                             <label for="contact-name"></label>
                         </div>
                         <div class="row mb-2">
-                            <input type="email" name="contact-email" id="contact-email" class="contact-input" placeholder="Your Email">
+                            <input type="email" name="contact-email" id="contact-email" class="contact-input"
+                                placeholder="Your Email">
                             <label for="contact-email"></label>
                         </div>
                         <div class="row">
-                            <textarea name="contact-message" id="contact-message" class="contact-input" cols="30" rows="10" placeholder="Your Message"></textarea>
+                            <textarea name="contact-message" id="contact-message" class="contact-input" cols="30"
+                                rows="10" placeholder="Your Message"></textarea>
                             <label for="contact-message"></label>
                         </div>
                         <div class="yellow-button helvetica row justify-content-center ml-auto mr-auto mt-3">Send</div>
                     </form>
                 </section>
-            </div>
 
-            <div class="main-part col-9">
-                <article id="night-life" class="main-shadow container-fluid">
+            </aside>
+
+            <section id="main-content" class="col">
+
+                <section id="night-life" class="main-shadow row ml-2 mr-1 mb-5">
                     <div class="col-6">
                         <div class="yellow-font">NIGHT LIFE</div>
                         <div>Written in the stars, Million miles away!</div>
@@ -304,9 +350,9 @@
                     <div class="col-6">
                         <img src="images/17-2.png" alt="Stars" width="100%">
                     </div>
-                </article>
+                </section>
 
-                <article id="trekking" class="main-shadow container-fluid">
+                <section id="trekking" class="main-shadow row ml-2 mr-1 mb-5">
                     <div class="col-6">
                         <img src="images/twoside1.png" alt="Awesome lake" width="100%">
                     </div>
@@ -329,32 +375,34 @@
                             </div>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article id="life-style" class="main-shadow container-fluid">
-                    <div class="row no-gutter">
-                        <img src="images/mika-matin-139247.png" alt="Railroad" width="100%">
-                    </div>
-                    <div class="yellow-font">LIFESTYLE</div>
-                    <div class="row justify-content-between">
-                        <span class="col">The Vermont Delegation Mourns the Sanders Campaign</span>
-                        <div class="col-5"> March 22, 2017 . <i class="far fa-heart"></i> 100 Likes .
-                            <i class="far fa-comment"> 20 Comment</i></div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-2 yellow-button">readmore</div>
-                        <div class="col-2">
-                            <a href="https://www.facebook.com/" target="_blank" class="yellow-font"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/" target="_blank" class="yellow-font"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank" class="yellow-font"><i
-                                    class="fab fa-instagram"></i></a>
+                <section id="life-style" class="main-shadow row ml-2 mr-1 mb-5">
+                    <div class="col">
+                        <div class="row">
+                            <img src="images/mika-matin-139247.png" alt="Railroad" width="100%">
+                        </div>
+                        <div class="yellow-font">LIFESTYLE</div>
+                        <div class="row justify-content-between">
+                            <span class="col">The Vermont Delegation Mourns the Sanders Campaign</span>
+                            <div class="col-5"> March 22, 2017 . <i class="far fa-heart"></i> 100 Likes .
+                                <i class="far fa-comment"> 20 Comment</i></div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-2 yellow-button">readmore</div>
+                            <div class="col-2">
+                                <a href="https://www.facebook.com/" target="_blank" class="yellow-font"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/" target="_blank" class="yellow-font"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" class="yellow-font"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article id="food" class="main-shadow container-fluid">
+                <section id="food" class="main-shadow row ml-2 mr-1 mb-5">
                     <div class="col-6">
                         <img src="images/ydmnwsnswo0-adrian-sava.png" alt="Leading girl" width="100%">
                         <div class="row justify-content-center yellow-font">FOOD AND TRAVEL</div>
@@ -393,32 +441,34 @@
                             </div>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <article id="life-style-2" class="main-shadow container-fluid">
-                    <div class="row no-gutter">
-                        <img src="images/y_jyoii-nk4-matic-kozinc.png" alt="Meadows" width="100%">
-                    </div>
-                    <div class="yellow-font">LIFESTYLE</div>
-                    <div class="row justify-content-between">
-                        <span class="col">The Vermont Delegation Mourns the Sanders Campaign</span>
-                        <div class="col-5"> March 22, 2017 . <i class="far fa-heart"></i> 100 Likes .
-                            <i class="far fa-comment"> 20 Comment</i></div>
-                    </div>
-                    <div class="row justify-content-between">
-                        <div class="col-2 yellow-button">readmore</div>
-                        <div class="col-2">
-                            <a href="https://www.facebook.com/" target="_blank" class="yellow-font"><i
-                                    class="fab fa-facebook-f"></i></a>
-                            <a href="https://twitter.com/" target="_blank" class="yellow-font"><i
-                                    class="fab fa-twitter"></i></a>
-                            <a href="https://www.instagram.com/" target="_blank" class="yellow-font"><i
-                                    class="fab fa-instagram"></i></a>
+                <section id="life-style-2" class="main-shadow row ml-2 mr-1 mb-5">
+                    <div class="col">
+                        <div class="row">
+                            <img src="images/y_jyoii-nk4-matic-kozinc.png" alt="Meadows" width="100%">
+                        </div>
+                        <div class="yellow-font">LIFESTYLE</div>
+                        <div class="row justify-content-between">
+                            <span class="col">The Vermont Delegation Mourns the Sanders Campaign</span>
+                            <div class="col-5"> March 22, 2017 . <i class="far fa-heart"></i> 100 Likes .
+                                <i class="far fa-comment"> 20 Comment</i></div>
+                        </div>
+                        <div class="row justify-content-between">
+                            <div class="col-2 yellow-button">readmore</div>
+                            <div class="col-2">
+                                <a href="https://www.facebook.com/" target="_blank" class="yellow-font"><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a href="https://twitter.com/" target="_blank" class="yellow-font"><i
+                                        class="fab fa-twitter"></i></a>
+                                <a href="https://www.instagram.com/" target="_blank" class="yellow-font"><i
+                                        class="fab fa-instagram"></i></a>
+                            </div>
                         </div>
                     </div>
-                </article>
+                </section>
 
-                <nav id="pagination" class="row justify-content-between">
+                <nav id="paginator" class="row justify-content-between mt-5 p-5 mb-5">
                     <div class="col-3">
                         <i class="fas fa-long-arrow-alt-left"></i> Previous
                     </div>
@@ -431,44 +481,45 @@
                         Next <i class="fas fa-long-arrow-alt-right"></i>
                     </div>
                 </nav>
-            </div>
-        </div>
 
-        <section id="gallery" class="row no-gutters">
-            <div class="col">
-                <img src="images/gallery/1.png" alt="Sleeping girl" width="100%">
-            </div>
-            <div class="col">
-                <img src="images/gallery/2.png" alt="Railroad" width="100%">
-            </div>
-            <div class="col">
-                <img src="images/gallery/6.png" alt="Planets" width="100%">
-            </div>
-            <div class="col">
-                <img src="images/gallery/33.png" alt="Girl and moon" width="100%">
-            </div>
-        </section>
+            </section>
 
-        <section id="gallery-2" class="row no-gutters">
-            <div class="col">
-                <img src="images/gallery/timetravel11.png" alt="Time travel" width="100%">
-            </div>
-            <div class="col">
-                <img src="images/gallery/bitch1.png" alt="Skyscrapers" width="100%">
-            </div>
-            <div class="col">
-                <img src="images/gallery/wood2.png" alt="Purple moon" width="100%">
-            </div>
-            <div class="col">
-                <img src="images/gallery/3.png" alt="Boy in cellphone" width="100%">
-            </div>
         </section>
 
     </main>
 
+    <section id="gallery" class="shadowed row no-gutters mb-5">
+        <div class="col">
+            <img src="images/gallery/1.png" alt="Sleeping girl" width="100%">
+        </div>
+        <div class="col">
+            <img src="images/gallery/2.png" alt="Railroad" width="100%">
+        </div>
+        <div class="col">
+            <img src="images/gallery/6.png" alt="Planets" width="100%">
+        </div>
+        <div class="col">
+            <img src="images/gallery/33.png" alt="Girl and moon" width="100%">
+        </div>
+    </section>
 
-    <footer id="footer row justify-content-center">
-        <nav id="connection-bott" class="row justify-content-center mt-5 mb-5">
+    <section id="gallery-2" class="row no-gutters">
+        <div class="col">
+            <img src="images/gallery/timetravel11.png" alt="Time travel" width="100%">
+        </div>
+        <div class="col">
+            <img src="images/gallery/bitch1.png" alt="Skyscrapers" width="100%">
+        </div>
+        <div class="col">
+            <img src="images/gallery/wood2.png" alt="Purple moon" width="100%">
+        </div>
+        <div class="col">
+            <img src="images/gallery/3.png" alt="Boy in cellphone" width="100%">
+        </div>
+    </section>
+
+    <footer id="footer" class="container-fluid">
+        <nav id="connection-bott" class="row col justify-content-center mt-5 mb-5">
             <a href="https://www.facebook.com/" class="connection" target="_blank"><i class="fab fa-facebook-f"></i>
                 FACEBOOK</a>
             <a href="https://twitter.com/" class="connection ml-5" target="_blank"><i class="fab fa-twitter"></i>
@@ -484,27 +535,34 @@
             <a href="https://www.youtube.com/" class="connection ml-5" target="_blank"><i class="fab fa-youtube"></i>
                 YOUTUBE</a>
         </nav>
-        <div class="grey-back relative pt-3 pb-5">
-            <hr class="footer-line">
-            <div class="row justify-content-center mt-5 mb-5">
-                <img src="images/logo-bott.svg" alt="Beautiful website logo">
-            </div>
+        <div class="row grey-back relative  pt-3">
+            <div class="col">
+                <div class="row col justify-content-center">
+                    <hr class="footer-line">
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-2 mt-5 mb-5">
+                        <img src="images/logo-bott.svg" alt="Beautiful website logo" width="100%">
+                    </div>
+                </div>
+                <nav id="nav-bott" class="row col pb-5 justify-content-center">
+                    <a href="" class="nav-link ml-5">HOME</a>
+                    <a href="" class="nav-link ml-5">FEATURED</a>
+                    <a href="" class="nav-link ml-5">GALLERY</a>
+                    <a href="" class="nav-link ml-5">UPCOMING</a>
+                    <a href="" class="nav-link ml-5">CATEGORIES</a>
+                    <a href="" class="nav-link ml-5">CONTACT</a>
+                </nav>
+                <div class="row justify-content-center">
+                    <div class="button-up relative row justify-content-center">
+                        <a href="#header" class="row justify-content-center align-items-center">
+                            <i class="fas fa-angle-up fs-4"></i>
+                            <div class="triangle-bl absolute"></div>
+                            <div class="triangle-br absolute"></div>
+                        </a>
+                    </div>
+                </div>
 
-            <nav id="nav-bott" class="row pb-5 justify-content-center">
-                <a href="" class="nav-link ml-5">HOME</a>
-                <a href="" class="nav-link ml-5">FEATURED</a>
-                <a href="" class="nav-link ml-5">GALLERY</a>
-                <a href="" class="nav-link ml-5">UPCOMING</a>
-                <a href="" class="nav-link ml-5">CATEGORIES</a>
-                <a href="" class="nav-link ml-5">CONTACT</a>
-            </nav>
-
-            <div class="button-up absolute">
-                <a href="#header" class="row no-gutter justify-content-center align-items-center">
-                    <i class="fas fa-angle-up"></i>
-                    <div class="triangle-bl absolute"></div>
-                    <div class="triangle-br absolute"></div>
-                </a>
             </div>
         </div>
         <div class="credits helvetica row justify-content-end m-3">TravelGram MarkUp By Vlad Panchenko</div>

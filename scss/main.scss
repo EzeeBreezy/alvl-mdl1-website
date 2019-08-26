@@ -53,7 +53,6 @@ input:focus {
 
 a:visited {
     text-decoration: none;
-    color: black;
 }
 
 label {
@@ -131,6 +130,10 @@ label {
     left: 0;
 }
 
+.black-font {
+    color: black
+}
+
 .white-font {
     color: white
 }
@@ -147,8 +150,7 @@ label {
 color: rgb(155, 160, 160)
 }
 
-.let-sp-2 {
-    letter-spacing: 2px;
+.text-justify {
     text-align: justify;
 }
 
@@ -250,7 +252,7 @@ color: rgb(155, 160, 160)
     border-bottom: none;
     width: 70%;
     height: 20%;
-    top: 3rem;
+    top: 1.5rem;
     left: 15%;
     z-index: 1;
 }
@@ -498,7 +500,15 @@ color: rgb(155, 160, 160)
     background-color: rgb(255, 140, 8);
 }
 
+// GALLERY
+// #gallery, #gallery-2 {
+//     margin-bottom: -2rem;
+// }
 
+// .glitch {
+//     margin-bottom: -5rem;
+//     padding-bottom: -5rem;
+// }
 
 // FOOTER
 .grey-back {
@@ -520,16 +530,24 @@ color: rgb(155, 160, 160)
     font-size: 1.2rem;
     word-spacing: 5px;
 }
-// not centered
+
 .button-up {
-    left: 50%;
-    bottom: -2rem;
     width: 5rem;
     height: 4rem;
+    margin-bottom: -2rem;
     background-color: white;
     @include button(0px);
 }
-// add font-size center add triangles
+
+.button-up:hover {
+    padding-bottom: 2rem;
+}
+
+.button-up:active {
+    padding-bottom: 2rem;
+    background-color: red;
+}
+
 .button-up a {
     width: 100%;
     height: 100%;
