@@ -3092,11 +3092,7 @@ body {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
-  -ms-user-select: none;
-  background: -webkit-gradient(linear, left top, left bottom, from(#4d143f), to(#fadc33));
-  background: -webkit-linear-gradient(top, #4d143f, #fadc33);
-  background: -o-linear-gradient(top, #4d143f, #fadc33);
-  background: linear-gradient(to bottom, #4d143f, #fadc33); }
+  -ms-user-select: none; }
 
 .container, .container-fluid {
   background: white; }
@@ -3132,7 +3128,15 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3140,7 +3144,7 @@ label {
   height: 2.3rem;
   text-align: center;
   line-height: 2rem;
-  max-width: 10rem;
+  max-width: 9rem;
   background-color: #ffc908;
   border: 3px solid #ffc908; }
 
@@ -3246,22 +3250,22 @@ label {
   font-family: 'Oxygen'; }
 
 .fs-1 {
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
 
 .fs-2 {
-  font-size: 1rem; }
+  font-size: 0.9rem; }
 
 .fs-3 {
-  font-size: 1.2rem; }
+  font-size: 1.1rem; }
 
 .fs-4 {
-  font-size: 1.4rem; }
+  font-size: 1.3rem; }
 
 .fs-5 {
-  font-size: 1.8rem; }
+  font-size: 1.7rem; }
 
 .fs-6 {
-  font-size: 2.5rem; }
+  font-size: 2.3rem; }
 
 .line-height-x2 {
   line-height: 2; }
@@ -3335,13 +3339,21 @@ label {
   border: 1px solid #E9E9E9;
   border-radius: 2px;
   min-height: 2rem;
-  max-width: 11rem;
+  width: 10rem;
   font-family: "Dosis";
   color: #242929;
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3384,11 +3396,9 @@ label {
   min-height: 4rem; }
 
 #eclipse {
-  background: url(../images/image.png) no-repeat;
+  background: url(../images/slider.png) no-repeat;
   background-size: cover;
   background-position: center;
-  background-position-y: -4rem;
-  min-height: 50rem;
   -webkit-box-shadow: 0px 0.8rem 1.5rem 0.15rem rgba(0, 0, 0, 0.19);
   box-shadow: 0px 0.8rem 1.5rem 0.15rem rgba(0, 0, 0, 0.19); }
 
@@ -3432,7 +3442,7 @@ label {
   background-color: red; }
 
 #map {
-  height: 45rem;
+  height: 40rem;
   width: 100%; }
 
 #about-me p {
@@ -3463,7 +3473,15 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3518,23 +3536,38 @@ label {
 
 .oversized {
   position: absolute;
-  top: -5rem; }
-
-.oversized-v2 {
-  padding: -5rem; }
+  top: -5rem;
+  right: 0;
+  width: 100%;
+  height: 185%; }
 
 .cover-button {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
   letter-spacing: 3px;
-  width: 12rem;
-  height: 4rem;
-  border: 1px solid white; }
+  width: 10rem;
+  height: 3rem;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.cover-comment {
+  position: absolute;
+  bottom: 15%; }
 
 .likes-comments {
   position: absolute;
@@ -3589,7 +3622,15 @@ label {
   text-transform: uppercase;
   font-weight: bold;
   cursor: pointer;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
@@ -3606,3 +3647,31 @@ label {
   width: 100%;
   height: 100%;
   color: black; }
+
+@media screen and (min-width: 2560px) {
+  * {
+    font-size: 32px; } }
+
+@media screen and (max-width: 2559px) {
+  * {
+    font-size: 26px; } }
+
+@media screen and (max-width: 1919px) {
+  * {
+    font-size: 18px; } }
+
+@media screen and (max-width: 1199px) {
+  * {
+    font-size: 14px; } }
+
+@media screen and (max-width: 991px) {
+  * {
+    font-size: 10px; } }
+
+@media screen and (max-width: 767px) {
+  * {
+    font-size: 8px; } }
+
+@media screen and (max-width: 575) {
+  * {
+    font-size: 6px; } }
